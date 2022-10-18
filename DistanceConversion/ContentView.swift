@@ -23,14 +23,6 @@ struct ContentView: View {
         return convertFromMillimeters(toUnit: outputUnits, millimeters: distanceInMillimeters)
     }
     
-    var formatter: NumberFormatter {
-        let formatter = NumberFormatter()
-        formatter.minimumFractionDigits = 0
-        formatter.maximumFractionDigits = 4
-        formatter.minimumIntegerDigits = 1
-        return formatter
-    }
-    
     func filterUnitsFor(unitSystem: measurementSystem) -> [distanceUnits] {
         switch unitSystem {
         case .imperial: return distanceUnits.imperial
@@ -90,10 +82,10 @@ struct ContentView: View {
                 
                 Section("Results") {
                     Text("""
-                            \(formatter.string(from: inputDistance as NSNumber)!) \(inputUnits.rawValue)\n
-                            converts into\n
-                            \(formatter.string(from: result as NSNumber)!) \(outputUnits.rawValue)
-                            """)
+                        \(inputDistance.formatted()) \(inputUnits.rawValue)\n
+                        converts into\n
+                        \(result.formatted()) \(outputUnits.rawValue)
+                    """)
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity)
                 }
