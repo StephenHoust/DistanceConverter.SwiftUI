@@ -11,6 +11,8 @@
 		C73DF54928FDF1AD00B64F99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DF54828FDF1AD00B64F99 /* ContentView.swift */; };
 		C73DF54B28FDF1AE00B64F99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73DF54A28FDF1AE00B64F99 /* Assets.xcassets */; };
 		C73DF54F28FDF1AE00B64F99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73DF54E28FDF1AE00B64F99 /* Preview Assets.xcassets */; };
+		C73DF55828FF611900B64F99 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DF55728FF611900B64F99 /* Enums.swift */; };
+		C73DF55C28FF617200B64F99 /* ConversionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DF55B28FF617200B64F99 /* ConversionHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		C73DF54A28FDF1AE00B64F99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C73DF54C28FDF1AE00B64F99 /* DistanceConversion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DistanceConversion.entitlements; sourceTree = "<group>"; };
 		C73DF54E28FDF1AE00B64F99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C73DF55728FF611900B64F99 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		C73DF55B28FF617200B64F99 /* ConversionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,11 @@
 			children = (
 				C73DF54628FDF1AD00B64F99 /* DistanceConversionApp.swift */,
 				C73DF54828FDF1AD00B64F99 /* ContentView.swift */,
+				C73DF55B28FF617200B64F99 /* ConversionHelpers.swift */,
 				C73DF54A28FDF1AE00B64F99 /* Assets.xcassets */,
 				C73DF54C28FDF1AE00B64F99 /* DistanceConversion.entitlements */,
 				C73DF54D28FDF1AE00B64F99 /* Preview Content */,
+				C73DF55728FF611900B64F99 /* Enums.swift */,
 			);
 			path = DistanceConversion;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C73DF54928FDF1AD00B64F99 /* ContentView.swift in Sources */,
+				C73DF55828FF611900B64F99 /* Enums.swift in Sources */,
 				C73DF54728FDF1AD00B64F99 /* DistanceConversionApp.swift in Sources */,
+				C73DF55C28FF617200B64F99 /* ConversionHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
